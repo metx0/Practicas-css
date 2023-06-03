@@ -1,0 +1,219 @@
+/* Importamos las fuentes Archivo y DM Serif Display */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem valdrá 18px */
+    font-size: 18px;
+    font-family: 'Archivo', sans-serif;
+}
+
+body {
+    /* Todos los elementos tendrán un line height de 1.2 veces su tamaño */
+    line-height: 1.2;
+}
+
+/* Estilos de la barra de navegación */
+.nav {
+    padding: 0.8rem;
+    border-bottom: 2px solid black;
+    background-color: #fff;
+    /* Para que el navbar siempre se vea */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.nav h2 {
+    display: inline-block;
+    color: #333;
+    font-family: "DM Serif Display", serif;
+    margin-left: 3rem;
+}
+
+/* Los estilos del enlace que dirige a home */
+.home {
+    color: #333;
+    text-decoration: none;
+}
+
+.home:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.nav ul {
+    list-style-type: none;
+    float: right;
+    margin-right: 3rem;
+    margin-top: 0.35rem;
+}
+
+/* Las viñetas de la lista del navbar */
+.nav ul li {
+    /* Cada punto de la lista ocupará solo su contenido */
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.nav li a {
+    font-size: 1.1rem;
+    color: rgb(49, 10, 10);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Estilos de la primera sección de la página */
+.container1 {
+    background-color: antiquewhite;
+    padding: 7rem 4rem;
+    border-bottom: 2px solid black;
+    /* Para que el tamaño del contenedor se ajuste también al de la imagen flotante a la derecha */
+    overflow: hidden;
+}
+
+/* Estilos del encabezado y texto principales */
+.section {
+    font-size: 1.5rem;
+    /* El ancho será el 45% de la pantalla */
+    width: 45%;
+    /* Para que pueda ponerse la imagen a la derecha */
+    display: inline-block;
+}
+
+.section h2 {
+    font-size: 2em;
+    font-family: "DM Serif Display", serif;
+}
+
+.section p {
+    margin-top: 1.2rem;
+}
+
+.img {
+    width: 50%;
+    float: right;
+}
+
+/* Estilos de la segunda sección de la página */
+.container2 {
+    background-color: #fff;
+    padding: 3rem;
+    border-bottom: 2px solid black;
+}
+
+.container_text {
+    width: 48%;
+    /* Para que esté centrado horizontalmente */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container_text h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 1.2em;
+}
+
+.container_text p {
+    margin-top: 1.5em;
+}
+
+/* La pregunta con el botón de Get Started */
+.container_button {
+    /* Ocupará el 60% de su contenedor, que es container_text */
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    font-size: 1.35rem;
+}
+
+.container_button h2 {
+    font-size: 1.1em;
+}
+
+.button {
+    padding: 0.7rem;
+    margin-top: 1.3rem;
+    font-size: 0.8em;
+    font-family: inherit;
+    font-weight: 600;
+    color: #333;
+    border: 2px solid black;
+    /* Para la transición al cambiar de color */
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* Estilos de la tercera sección de la página */
+.container3 {
+    padding: 3rem;
+    text-align: center;
+    background-color: antiquewhite;
+    line-height: 1.55;
+}
+
+.container3 h2 {   
+    font-family: "DM Serif Display", serif;
+    font-size: 1.8rem;
+}
+
+.container3 p {
+    font-size: 1.2rem;
+}
+
+.columns {
+    column-count: 3; 
+    column-gap: 6rem;
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 80%;
+}
+
+/* Estilos del footer */
+.footer {
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.footer_ul {
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+.footer_ul li {
+    display: inline-block;
+    margin-right: 1.2rem;
+}
+
+.footer_ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer_ul li a:hover {
+    text-decoration: underline;
+}
